@@ -1,3 +1,12 @@
+# CLLFS - Clang `llvmlibc` Linux From Scratch
+
+LLVM has all the bits to create an entire `x86_64-linux-llvm` based linux distro - but not enough to compile itself :( - so let's do it do it: [oasislinux](https://github.com/oasislinux/oasis).
+
+x86_64 only. llvm 21+ everything. no glibc / gnu / musl / binutils. [-Omg -O4 -flto=full+fat](https://www.shlomifish.org/humour/by-others/funroll-loops/Gentoo-is-Rice.html)
+
+goals: get it working before the rest of my sanity leaves me.
+
+
 # CMLFS - Clang Musl Linux From Scratch
 
 CMLFS can either mean "Clang-built Musl Linux from Scratch" or "Clang MLFS". It started as a hobby to see if a Linux system can be built with clang as primary toolchain and GCC as secondary (for packages that cannot be built with clang). This is based on [Linux From Scratch](www.linuxfromscratch.org) and my previous work [MLFS](https://github.com/dslm4515/Musl-LFS). Big thanks to [Chimera-Linux](https://chimera-linux.org) that had patches that fixed a lot of issues.
